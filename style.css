@@ -1,9 +1,69 @@
 /* Fonts */ 
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&family=Ubuntu:wght@400;500;700&family=Volkhov:ital,wght@0,700;1,400&family=Yeon+Sung&display=swap'); 
 /* Comon styles or utilities*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background: #F3F1FF;
+}
+
+.header{
+    height: 94px;
+    width: 100%;
+    background: #562EFF;
+    padding: 20px 22%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img{
+    width: 40px;
+    cursor: pointer;
+}
+
+.logo-title{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation > img{
+    width: 50px;
+    margin-left: 36px;
+    cursor: pointer;
+}
+
+.navigation ul{
+    display: flex;
+}
+
+.navigation ul li{
+    list-style: none;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 36px;
+    font-weight: 400;
 }
 
 main{
